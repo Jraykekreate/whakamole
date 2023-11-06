@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  cursor: url("./mallet.svg"), auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #666;
+  font-family: "Press Start 2P";
+  color: #1a202c;
+}
+.container {
+  display: grid;
+  background: #333;
+  max-width: 40rem;
+  height: 40rem;
+  width: 60vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem;
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 90vw;
+  }
+}
