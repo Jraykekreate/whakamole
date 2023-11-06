@@ -47,7 +47,7 @@ function randomBoardSelection() {
         selectedDiv.style.backgroundImage = "none";
         selectedDiv.style.backgroundColor = "BBBDBD";
         selectedDiv.dataset.flipped = false;
-      }, 700);
+      }, 500);
     }
   }, 1000);
   selectedDiv;
